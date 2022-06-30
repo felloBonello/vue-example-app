@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import ContactView from "../views/ContactView.vue";
 import HomeView from "../views/HomeView.vue";
+import AssignmentsView from "../views/AssignmentsView";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: "/contact",
       name: "contact",
       component: ContactView,
+    },
+    {
+      path: "/assignments",
+      name: "assignments",
+      component: AssignmentsView,
     },
   ],
 });
